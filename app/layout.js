@@ -20,6 +20,28 @@ const inter = Inter({
 export const metadata = {
   title: 'Five Elements Forwarding',
   description: 'Global freight services',
+  icons: {
+    icon: '/favicon.ico',
+    // Optional: Add additional icon sizes
+    apple: [
+      { url: '/apple-icon.png' },
+      { url: '/apple-icon-180x180.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        url: '/favicon-32x32.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        url: '/favicon-16x16.png',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({ children }) {
