@@ -60,13 +60,10 @@ export default function Home() {
       <div className="fixed top-0 left-0 right-0 z-50 w-full bg-white shadow-sm">
         <header className="container mx-auto px-4 py-6 flex md:flex-row justify-between items-center">
           <div className="self-start w-full md:w-auto">
-            <Image 
+            <img 
               src="/logo.png" 
               alt="Logo" 
-              width={200} 
-              height={60} 
-              className="w-[150px] md:w-[200px] h-auto" 
-              priority
+              className="w-[150px] md:w-[200px] h-auto"
             />
           </div>
           
@@ -84,26 +81,32 @@ export default function Home() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:flex-row items-center gap-8">
             <nav className="flex items-center gap-14 mb-0">
-              <div 
-                className={`text-lg font-bold font-raleway cursor-pointer relative ${activeSection === 'hero' ? 'text-black' : 'text-[#8a8a8a]'} hover:text-[#ff360d] transition-colors duration-300`}
-                onClick={() => scrollToSection('hero')}
-              >
-                Home
-                <span className={`absolute left-0 bottom-[-4px] h-[2px] bg-[#ff360d] transition-all duration-300 ${activeSection === 'hero' ? 'w-full' : 'w-0'} group-hover:w-full`}></span>
+              <div className="group">
+                <div 
+                  className={`text-lg font-bold font-raleway cursor-pointer relative ${activeSection === 'hero' ? 'text-[#ff360d]' : 'text-[#8a8a8a]'} hover:text-[#ff360d] transition-colors duration-300`}
+                  onClick={() => scrollToSection('hero')}
+                >
+                  Home
+                  <span className={`absolute left-0 bottom-[-4px] h-[2px] bg-[#ff360d] transition-all duration-300 ${activeSection === 'hero' ? 'w-full' : 'w-0'} group-hover:w-full`}></span>
+                </div>
               </div>
-              <div 
-                className={`text-lg font-bold font-raleway cursor-pointer relative ${activeSection === 'about' ? 'text-black' : 'text-[#8a8a8a]'} hover:text-[#ff360d] transition-colors duration-300`}
-                onClick={() => scrollToSection('about')}
-              >
-                About
-                <span className={`absolute left-0 bottom-[-4px] h-[2px] bg-[#ff360d] transition-all duration-300 ${activeSection === 'about' ? 'w-full' : 'w-0'} group-hover:w-full`}></span>
+              <div className="group">
+                <div 
+                  className={`text-lg font-bold font-raleway cursor-pointer relative ${activeSection === 'about' ? 'text-[#ff360d]' : 'text-[#8a8a8a]'} hover:text-[#ff360d] transition-colors duration-300`}
+                  onClick={() => scrollToSection('about')}
+                >
+                  About
+                  <span className={`absolute left-0 bottom-[-4px] h-[2px] bg-[#ff360d] transition-all duration-300 ${activeSection === 'about' ? 'w-full' : 'w-0'} group-hover:w-full`}></span>
+                </div>
               </div>
-              <div 
-                className={`text-lg font-bold font-raleway cursor-pointer relative ${activeSection === 'services' ? 'text-black' : 'text-[#8a8a8a]'} hover:text-[#ff360d] transition-colors duration-300`}
-                onClick={() => scrollToSection('services')}
-              >
-                Services
-                <span className={`absolute left-0 bottom-[-4px] h-[2px] bg-[#ff360d] transition-all duration-300 ${activeSection === 'services' ? 'w-full' : 'w-0'} group-hover:w-full`}></span>
+              <div className="group">
+                <div 
+                  className={`text-lg font-bold font-raleway cursor-pointer relative ${activeSection === 'services' ? 'text-[#ff360d]' : 'text-[#8a8a8a]'} hover:text-[#ff360d] transition-colors duration-300`}
+                  onClick={() => scrollToSection('services')}
+                >
+                  Services
+                  <span className={`absolute left-0 bottom-[-4px] h-[2px] bg-[#ff360d] transition-all duration-300 ${activeSection === 'services' ? 'w-full' : 'w-0'} group-hover:w-full`}></span>
+                </div>
               </div>
             </nav>
           </div>
@@ -197,7 +200,7 @@ export default function Home() {
                 <p className="text-xl font-extrabold font-raleway mb-6 ">
                   At Five Elements Forwarding, we offer a full range of freight forwarding solutions
                 </p>
-                <p className="text-xl  font-medium font-raleway leading-loose text-center md:text-left">
+                <p className="text-base md:text-lg font-medium font-raleway leading-loose text-center md:text-left">
                   designed to move your cargo safely and efficiently. From container logistics and global trade support to fast airfreight and flexible LCL options—we make shipping simple, reliable, and tailored to your needs.
                 </p>
               </div>
