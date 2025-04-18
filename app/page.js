@@ -60,9 +60,11 @@ export default function Home() {
       <div className="fixed top-0 left-0 right-0 z-50 w-full bg-white shadow-sm">
         <header className="container mx-auto px-4 py-6 flex md:flex-row justify-between items-center">
           <div className="self-start w-full md:w-auto">
-            <img 
+            <Image 
               src="/logo.png" 
               alt="Logo" 
+              width={200}
+              height={100}
               className="w-[150px] md:w-[200px] h-auto"
             />
           </div>
@@ -164,7 +166,14 @@ export default function Home() {
            
           </div>
           <div className="lg:w-full lg:-mt-20 w-[200%]">
-            <img className="w-full h-auto" src="ship.png" alt="Hero Image" />
+            <Image 
+              src="/ship.png" 
+              alt="Hero Image"
+              width={1200}
+              height={600}
+              className="w-full h-auto"
+              priority
+            />
           </div>
           <p className="text-center text-[#787878] text-base md:text-lg font-medium font-raleway max-w-4xl mx-auto">
               Your trusted partner in international logistics. From ocean and airfreight to land transportation—delivering efficient, end-to-end freight solutions tailored for your business.
@@ -182,7 +191,7 @@ export default function Home() {
                 <br /><br />
                 With a deep understanding of international trade and supply chain complexities, we provide end-to-end services that ensure your goods arrive safely, efficiently, and on time. From <span className="font-bold">Full Container Load (FCL)</span> to <span className="font-bold">Less than Container Load (LCL)</span>, as well as <span className="font-bold">reliable Airfreight options</span>, our flexible offerings cater to businesses of all sizes and across industries.
                 <br /><br />
-                Our team is driven by precision, transparency, and a commitment to customer satisfaction. Whether you're shipping across continents or managing regional distribution, Five Elements Forwarding is your trusted partner in seamless global logistics.
+                Our team is driven by precision, transparency, and a commitment to customer satisfaction. Whether you&apos;re shipping across continents or managing regional distribution, Five Elements Forwarding is your trusted partner in seamless global logistics.
                 <br /><br />
                 Let us simplify your supply chain—because when it comes to freight, every element counts.
               </p>
@@ -200,7 +209,7 @@ export default function Home() {
                 <p className="text-xl font-extrabold font-raleway mb-6 ">
                   At Five Elements Forwarding, we offer a full range of freight forwarding solutions
                 </p>
-                <p className="text-base md:text-lg font-medium font-raleway leading-loose text-center md:text-left">
+                <p className="text-base md:text-lg font-medium font-raleway leading-loose text-left">
                   designed to move your cargo safely and efficiently. From container logistics and global trade support to fast airfreight and flexible LCL options—we make shipping simple, reliable, and tailored to your needs.
                 </p>
               </div>
@@ -288,7 +297,13 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div>
-                <img className="w-[150px] md:w-[200px] h-auto" src="logow.png" alt="Logo" />
+                <Image 
+                  src="/logow.png" 
+                  alt="Logo"
+                  width={200}
+                  height={60}
+                  className="w-[150px] md:w-[200px] h-auto"
+                />
               </div>
               <div></div> {/* Empty div for spacing */}
               <div className="text-white">
