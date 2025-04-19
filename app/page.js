@@ -112,7 +112,10 @@ export default function Home() {
               </div>
             </nav>
           </div>
-          <div className="bg-black rounded-[10px] px-10 py-3 justify-center items-center lg:block hidden">
+          <div 
+            className="bg-black rounded-[10px] px-10 py-3 justify-center items-center lg:block hidden cursor-pointer"
+            onClick={() => window.location.href = "mailto:Sales@5elementsforwarding.com"}
+          >
             <div className="text-white text-md font-normal font-raleway">Contact us</div>
           </div>
             
@@ -136,7 +139,10 @@ export default function Home() {
                 >Services</div>
               </nav>
               
-              <div className="bg-[#ff360d] rounded-[10px] px-6 py-3 inline-flex justify-center items-center mt-8">
+              <div 
+                className="bg-[#ff360d] rounded-[10px] px-6 py-3 inline-flex justify-center items-center mt-8 cursor-pointer"
+                onClick={() => window.location.href = "mailto:Sales@5elementsforwarding.com"}
+              >
                 <div className="text-white text-lg font-normal font-raleway">Contact us</div>
               </div>
             </div>
@@ -183,9 +189,9 @@ export default function Home() {
         {/* About Us Section */}
         <section id="about" className="bg-[#0b0b0b] py-16 h-screen">
           <div className="container mx-auto px-4">
-            <h2 className="text-7xl font-bold font-raleway text-white mb-6">About us</h2>
+            <h2 className="text-7xl font-bold font-raleway text-white mb-6 mt-10">About us</h2>
           
-            <div className="text-justify mt-8">
+            <div className="text-justify mt-20">
               <p className="text-white  font-normal font-raleway leading-relaxed ">
                 At <span className="text-[#ff360d] font-bold">Five Elements Forwarding</span>, we bring years of expertise to the world of global logistics. Based in the dynamic hub of Dubai, we specialize in the import and export of containerized cargo, offering tailored freight forwarding solutions that move your business forward.
                 <br /><br />
