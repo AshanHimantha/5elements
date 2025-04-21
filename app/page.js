@@ -299,7 +299,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-[#0b0b0b] py-8">
+        <footer className="bg-[#0b0b0b] py-8 pb-1">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div>
@@ -321,6 +321,19 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
+
+           
+          </div>
+          
+           {/* Copyright Section */}
+                     <div className="mt-8 md:mt-14 pt-4 pb-1 border-gray-800 bottom-0 px-2">
+            <p className="text-center text-gray-400 text-xs md:text-[12px] font-raleway">
+              © {new Date().getFullYear()} Five Elements Forwarding. All Rights Reserved.
+              <span className="block md:inline md:ml-1"> 
+                Developed by <a href="https://ashanhimantha.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#ff360d] transition-colors">Ashan Himantha</a>
+              </span>
+            </p>
           </div>
         </footer>
       </div>
