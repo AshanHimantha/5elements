@@ -187,7 +187,7 @@ export default function Home() {
         </section>
 
         {/* About Us Section */}
-        <section id="about" className="bg-[#0b0b0b] py-16 h-screen">
+        <section id="about" className="bg-[#0b0b0b] py-16 lg:h-screen">
           <div className="container mx-auto px-4">
             <h2 className="text-7xl font-bold font-raleway text-white mb-6 mt-10">About us</h2>
           
