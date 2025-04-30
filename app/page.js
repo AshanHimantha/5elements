@@ -55,10 +55,10 @@ export default function Home() {
   };
 
   return (
-    <div className={`min-h-screen bg-white overflow-x-hidden ${raleway.variable} ${inter.variable}`}>
+    <div className={`min-h-screen bg-white overflow-x-hidden ${raleway.variable} ${inter.variable} `}>
       {/* Fixed header */}
       <div className="fixed top-0 left-0 right-0 z-50 w-full bg-white shadow-sm">
-        <header className="container mx-auto px-4 py-6 flex md:flex-row justify-between items-center">
+        <header className="container mx-auto max-w-7xl px-4 py-6 flex md:flex-row justify-between items-center">
           <div className="self-start w-full md:w-auto">
             <Image 
               src="/logo.png" 
@@ -164,14 +164,13 @@ export default function Home() {
         </div>
 
         {/* Hero Section */}
-        <section id="hero" className="container mx-auto px-4 py-8 md:py-20 ">
+        <section id="hero" className="container mx-auto max-w-7xl px-4 py-8 md:py-20">
           <div className="mb-8 md:mb-16">
             <h1 className="text-3xl md:text-6xl font-bold font-raleway capitalize mb-6 text-black">
               <span className="text-[#ff360d]">Global</span> Freight, Seamlessly <span className="text-[#ff360d]"><br/>Delivered</span>
             </h1>
-           
           </div>
-          <div className="lg:w-full lg:-mt-20 w-[200%]">
+          <div className="lg:w-full lg:-mt-20 w-full overflow-hidden">
             <Image 
               src="/ship.png" 
               alt="Hero Image"
@@ -187,8 +186,8 @@ export default function Home() {
         </section>
 
         {/* About Us Section */}
-        <section id="about" className="bg-[#0b0b0b] py-16 lg:h-screen">
-          <div className="container mx-auto px-4">
+        <section id="about" className="bg-[#0b0b0b] py-16 lg:h-screen ">
+          <div className="container mx-auto px-4 max-w-7xl">
             <h2 className="text-7xl font-bold font-raleway text-white mb-6 mt-10">About us</h2>
           
             <div className="text-justify mt-20">
@@ -207,7 +206,7 @@ export default function Home() {
 
         {/* Services Section */}
         <section id="services" className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 max-w-7xl">
             <h2 className="text-7xl font-bold font-raleway text-[#ff360d] mb-12">Services</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -300,7 +299,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="bg-[#0b0b0b] py-8 pb-1">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 max-w-7xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div>
                 <Image 
