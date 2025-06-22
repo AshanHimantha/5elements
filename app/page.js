@@ -325,15 +325,19 @@ export default function Home() {
            
           </div>
           
-           {/* Copyright Section */}
-                     <div className="mt-8 md:mt-14 pt-4 pb-1 border-gray-800 bottom-0 px-2">
-            <p className="text-center text-gray-400 text-xs md:text-[12px] font-raleway">
-              © {new Date().getFullYear()} Five Elements Forwarding. All Rights Reserved.
-              <span className="block md:inline md:ml-1"> 
-                Developed by <a href="https://ashanhimantha.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#ff360d] transition-colors">Ashan Himantha</a>
-              </span>
-            </p>
-          </div>
+          {/* Copyright Section */}
+{/* Copyright Section */}
+<div className="mt-8 md:mt-14 pt-4 pb-1  px-2">
+  <p className="text-center text-gray-400 text-xs md:text-[12px] font-raleway">
+    © {new Date().getFullYear()} Five Elements Forwarding. All Rights Reserved.
+  </p>
+  <p className="text-center text-gray-400 text-xs md:text-[12px] font-raleway mt-1">
+    Developed by <a href="https://ashanhimantha.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#ff360d] transition-colors">Ashan Himantha</a>{' '}| UI/UX by{' '}
+    <a href="https://www.linkedin.com/in/thisara-neelawala-9b496421a/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#ff360d] transition-colors">Thisara Neelawala</a>
+  </p>
+</div>
+
+
         </footer>
       </div>
     </div>
